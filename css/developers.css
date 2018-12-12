@@ -5334,11 +5334,11 @@ a.ybtn-primary:hover, a.ybtn-primary:visited {
   position: relative;
   z-index: 5;
   padding: 12px 0 6px;
-  border-bottom: 1px solid #337AB7;
+  border-bottom: 1px solid #132B3F;
   font-size: 14px;
   line-height: 1.28571em;
-  -webkit-box-shadow: 0 0 5px #337AB7;
-  box-shadow: 0 0 5px #337AB7;
+  -webkit-box-shadow: 0 0 5px #132B3F;
+  box-shadow: 0 0 5px #132B3F;
   background-color: #132B3F;
   /**background: #af0606 image-url("yelp_styleguide/assetshttp://api.socib.es/home/img/logo_socib.png") no-repeat center;
   background: image-url("yelp_styleguide/assetshttp://api.socib.es/home/img/logo_socib.png") no-repeat center, -webkit-linear-gradient(#c41200, #af0606);
@@ -10532,17 +10532,17 @@ p.nobtm {
  * }
  */
 .main-header {
-  background: #af0606 url("http://api.socib.es/home/img/logo_socib.png") no-repeat center;
+  /*background: #af0606 url("http://api.socib.es/home/img/logo_socib.png") no-repeat center;
   background: url("http://api.socib.es/home/img/logo_socib.png") no-repeat center, -webkit-linear-gradient(#c41200, #af0606);
   background: url("http://api.socib.es/home/img/logo_socib.png") no-repeat center, -moz-linear-gradient(#c41200, #af0606);
-  background: url("http://api.socib.es/home/img/logo_socib.png") no-repeat center, linear-gradient(#c41200, #af0606); }
+  background: url("http://api.socib.es/home/img/logo_socib.png") no-repeat center, linear-gradient(#c41200, #af0606); */}
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .main-header {
-      background: #af0606 url("/img/structural/header_stars@2x.png") no-repeat center;
+      /*background: #af0606 url("/img/structural/header_stars@2x.png") no-repeat center;
       background: url("/img/structural/header_stars@2x.png") no-repeat center, -webkit-linear-gradient(#c41200, #af0606);
       background: url("/img/structural/header_stars@2x.png") no-repeat center, -moz-linear-gradient(#c41200, #af0606);
       background: url("/img/structural/header_stars@2x.png") no-repeat center, linear-gradient(#c41200, #af0606);
-      background-size: 1380px auto, 100%; } }
+      background-size: 1380px auto, 100%; */} }
 
 .main-header_logo,
 .ytype .main-header_logo {
