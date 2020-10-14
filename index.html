@@ -1,94 +1,332 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Yelp &amp; Open Source</title>
-    <link rel="stylesheet" type="text/css" href="css/octicons.css">
-    <link rel="stylesheet" type="text/css" href="css/www.css">
-    <link rel="stylesheet" type="text/css" href="css/developers.css">
-    <link rel="stylesheet" type="text/css" href="css/yelp-opensource.css">
-    <link rel="shortcut icon" href="https://s3-media2.fl.yelpcdn.com/assets/2/www/img/118ff475a341/ico/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/projects.js"></script>
-    <script src="js/orgs.js"></script>
-    <script src="js/repos.js"></script>
-    <script src="js/loaders.js"></script>
-    <script src="js/data/load_repos.js"></script>
-    <script src="js/data/load_members.js"></script>
-    <script src="js/opensource-site.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!doctype html>
+<html lang="en">
 
-      ga('create', 'UA-30501-17', 'auto');
-      ga('send', 'pageview');
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    </script>
-  </head>
-  <body class="ytype borderless">
-    <div id="wrap">
-      <div class="main-header main-content-wrap main-header--slim">
-        <div class="content-container clearfix">
-          <div class="arrange arrange--18 arrange--middle">
-            <div class="arrange_unit">
-              <h1 class="main-header_logo" id="logo">
-                <a href="https://www.yelp.com/engineering">Yelp</a>
-              </h1>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+    <title>Paz Rotllán García CV</title>
+    <meta name="keywords" content="Paz,Paz Rotllá,Paz's CV">
+    <meta name="author" content="Paz Rotllán">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-4 left-side">
+                <header>
+                    <div class="profile">
+                        <div class="picture">
+                            <img src="img/prg1.jpg" alt="Paz Rotllán García">
+                        </div>
+                        <a class="btn btn-cv" href="/PRG_CV.pdf" role="button" download>
+                            <i class="fas fa-file-alt"></i> Download CV
+                        </a>
+                        <h1>Paz Rotllán García</h1>
+                        <span>Developer</span>
+                    </div>
+                    <section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Contact details:
+                        </h2>
+                        <ul class="social">
+                        <li><i class="fas fa-envelope"></i> <span id="email">contact[at]pazrotgar@gmail.com</span></li>
+                        <li><i class="fas fa-phone"></i> <span id="email">657276690</span></li>
+                        <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/H0NGWANG">pazrg</a></li>
+                        <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/h0ngwang/">protllan</a></li>
+                    </ul>
+                    </section>
+                    <section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-tv fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Technical Skills:
+                        </h2>
+                        <b>Languages:</b> Python, JavaScript, Jquery, CSS, HTML<br>
+                        <b>Technologies:</b> Unix, Git, Django, Virtualenvwrapper, Jupyter Notebook, leaflet, WMS, restfull APIs<br>
+                    </section>
+                    <section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Other Skills:
+                        </h2>
+                        <b>Languages:</b> Spanish (native), English (C1), French (basic)<br>
+                        <b>Soft:</b> People skills, communication skills, social intelligence and emotional intelligence <br>
+                    </section>
+                                        <section class="honors">
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-medal fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Coaching events
+                        </h2>
+                        <h3>CMEMS workshops</h3>
+                        <div class="job-title">Speaker and trainner</div>
+                        <ul>
+                            <li>Number of events: 28</li>
+                            <li>Countries: Norway, Sweden, Portugal, Italy, Ireland, Findland...</li>
+                        </ul>
+                        <h3>EMODnet hackathons</h3>
+                        <div class="job-title">Speaker and trainner</div>
+                        <ul>
+                            <li>Number of events: 1</li>
+                            <li>Countries:Belgium</li>
+                        </ul>
+                        <h3>Jericonext workshops</h3>
+                        <div class="job-title">Speaker and trainner</div>
+                        <ul>
+                            <li>Number of events: 2</li>
+                            <li>Countries: Malta</li>
+                        </ul>
+                        <h3>Django Girls</h3>
+                        <div class="job-title">Speaker and trainner</div>
+                        <ul>
+                            <li>Number of events: 3</li>
+                            <li>Countries: Spain</li>
+                        </ul>
+                        <h3>Data Fest</h3>
+                        <div class="job-title">Speaker and trainner</div>
+                        <ul>
+                            <li>Number of events: 1</li>
+                            <li>Countries: Scotland</li>
+                        </ul>
+
+                    </section>
+                </header>
             </div>
-            <div class="arrange_unit nowrap">
-              <h2 class="main-header_title"><span>Oceanography</span></h2>
+
+            <div class="col-lg-8 right-side">
+                <article>
+                    <section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Experience
+                        </h2>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">SOCIB / Spain, Palma</h3>
+                                <div class="time">Sep. 2016 – Present</div>
+                            </div>
+                            <div class="job-title">Developer</div>
+
+                            <ul>Applications development and maintennace for the Data Center Facility at the Balearic Islands Coastal and Forecasting System (SOCIB). The scope of these applications varies greatedly (Data visualization, management, processing...) as well as the involved tech stack (python, js, django, boostrap, jquery, unix, thredds, django, boostrap, jquery...) and underlying services (Resfull APIs, microservices, WMS, OpenDaP...)
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-pen fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Projects
+                        </h2>
+
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">Copernicus Marine Service</h3>
+                                <div class="time">Sept. 2016 - Present</div>
+                            </div>
+                            <ul>
+                                <li>Trainning instructor for regional workshops (7/8 events per year along Europe)</li>
+                                <li>Coordination and development of user-friendly tools: dashboard and kpis</li>
+                            </ul>
+                        </div>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">SocorristaIB</h3>
+                                <div class="time">Sept. 2016 – Present</div>
+                            </div>
+                            <ul>
+                                <li>Design of data base squema/model</li>
+                                <li>Implementation of microservices</li>
+                                <li>Implementation of the frontend interface</li>
+                            </ul>
+                        </div>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">Glider Processing tool</h3>
+                                <div class="time">Sept. 2017 – Present</div>
+                            </div>
+                            <ul>
+                                <li>Design of data base squema/model</li>
+                                <li>Implementation of microservices</li>
+                                <li>Implementation of the frontend interface</li>
+                            </ul>
+                        </div>
+                        <div class="job" style="margin-bottom:-15px;">
+                            <div class="upper-row">
+                                <h3 class="company">Grummers</h3>
+                                <div class="time">2018 – Present</div>
+                            </div>
+                            <ul>
+                                <li>Maintenance of the aplication (permission management, data base ...)</li>
+                            </ul>
+                        </div>
+                        <div class="job" style="margin-bottom:-15px;">
+                            <div class="upper-row">
+                                <h3 class="company">Data Catalog</h3>
+                                <div class="time">2018 – Present</div>
+                            </div>
+                            <ul>
+                                <li>Maintenance and extension of the aplication at frontend level</li>
+                            </ul>
+                        </div>
+                        <div class="job" style="margin-bottom:-15px;">
+                            <div class="upper-row">
+                                <h3 class="company">Medaces / Bevacet</h3>
+                                <div class="time">2019 – Present</div>
+                            </div>
+                            <ul>
+                                <li>Viewers frontend development</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                            </span>
+                            ACADEMY
+                        </h2>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">UPO / Spain, Seville</h3>
+                                <div class="time">Sep. 2015 – 2016*</div>
+                            </div>
+                            <div class="job-title">Master</div>
+                            <ul>Master in BIgData & Businness Analytics by the University of Pablo de Olavide (UPO).
+                            *Dissertation still pending.</ul>
+                        </div>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">UMA & UGR / Spain, Malaga</h3>
+                                <div class="time">Sep. 2014 – 2015</div>
+                            </div>
+                            <div class="job-title">Master</div>
+                            <ul>Environmental Hydraulics (Geophysical fluids) by the University of Malaga (UMA) and University of Granada (UGR)
+                            </ul>
+                        </div>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">UCA / Spain, Cádiz</h3>
+                                <div class="time">Sep. 2007 – 2012</div>
+                            </div>
+                            <div class="job-title">Degree</div>
+
+                            <ul>Marine Science degree (Physical Oceanography) in Cadiz University, Spain.
+                            One Erasmus year at Kingston University of London, England.
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                            </span>
+                            OTHERS
+                        </h2>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">McKinsey& EOI / Spain, Seville</h3>
+                                <div class="time">Sep. 2015 – 2016</div>
+                            </div>
+                            <div class="job-title">Courses</div>
+                            <ul>Frontend development with Angularjs (Makenzie - Generation Spain)</ul>
+                        </div>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">Core Networks / Spain, Seville</h3>
+                                <div class="time">Sep. 2015 – 2015</div>
+                            </div>
+                            <div class="job-title">Courses</div>
+                            <ul>PLSQL programming</ul>
+                        </div>
+                        <div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">UHU / Spain, Huelva</h3>
+                                <div class="time">Sep. 2014 – 2015</div>
+                            </div>
+                            <div class="job-title">Courses</div>
+                            <ul>Aquaculture techniques</ul>
+                        </div>
+       					<div class="job">
+                            <div class="upper-row">
+                                <h3 class="company">US / Spain, Seville</h3>
+                                <div class="time">Sep. 2014 – 2015</div>
+                            </div>
+                            <div class="job-title">Courses</div>
+                            <ul>GvSIG: real case simulations</ul>
+                        </div>
+                    </section>
+                    <!--<section>
+                        <h2 class="section-title">
+                            <span class="fa-stack fa-xs">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
+                            </span>
+                            Let's Get in Touch
+                        </h2>
+
+                        <form class="contact-form" id="contact-form" method="POST">
+                            <input type="hidden" name="_subject" value="Website contact" />
+                            <div class="form-group">
+                                <input type="text" required="" name="name" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" required="" name="_replyto" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" required="" name="subject" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="4" required="" name="message" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="hidden" name="_next" value="https://hongwang.me/" />
+                            <button type="submit" class="btn btn-cv">Submit</button>
+                        </form>
+                    </section>-->
+                </article>
+                <!--<footer>
+                    <small class="copyright">
+                        Made with <i class="fas fa-heart"></i> by <a href="https://hongwang.me/" target="_blank" rel="nofollow">Hong Wang</a>
+                    </small>
+                </footer>-->
             </div>
-            <div class="arrange_unit arrange_unit--fill">
-              <div class="main-header_nav nowrap responsive-hidden-small responsive-hidden-medium">
-                <ul class="header-nav" id="header-nav">
-                  <li class="header-nav_item">
-                    <a class="header-nav_link" href="http://api.socib.es/home/">Home</a>
-                  </li>
-                  <li class="header-nav_item">
-                    <a class="header-nav_link tabon" href="http://apps.socib.es/data-catalog/">data-catalog</a>
-                  </li>
-                  <li class="header-nav_item">
-                    <a class="header-nav_link" href="https://github.com/socib">Public code</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </main>
 
-      <div class="top-shelf top-shelf-grey">
-        <div class="container">
-          <h1>SOCIB new API</h1>
-          <ul class='bullet-list-round'>
-            <li>Power your app with SOCIB's metocean data</li>
-            <li>We love open source and want to give back with projects like SOCIB API</li>
-            <li>Get started today and request yout API key</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Optional JavaScript -->
+    <script src="js/script.js" type="text/javascript"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 
-      <div class='main-container layout-block layout-right-rail'>
-        <div class="projects container">
-          <h2>Popular</h2>
-          <div class="featured"></div>
-
-          <h2>Custom examples</h2>
-          <div class="not-featured"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="footer-wrap">
-
-        <p class="copyright lesser-text">
-          © ©2018 ICTS SOCIB - Sistema d’observació i predicció costaner de les Illes Balears. Parc Bit, Naorte, Bloc A 2ºp. pta. 3. Palma de Mallorca SPAIN. E-07121. Tel: +034 971 43 99 98. CIF: Q0700535H.
-        </p>
-
-        <!--Source: Freebase (http://www.freebase.com/), licensed under CC-BY (https://creativecommons.org/licenses/by/2.5/)-->
-      </div>
-    </div>
-  </body>
 </html>
